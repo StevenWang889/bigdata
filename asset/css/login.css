@@ -1,10 +1,10 @@
 html,
 body {
-  margin: 0;
   padding: 0;
-  height: 100%;
+  margin: 0;
   width: 100%;
-  background: url('/assets/images/login_bg.jpg') no-repeat center;
+  height: 100%;
+  background: url(../images/login_bg.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -13,17 +13,18 @@ body {
   height: 310px;
   background-color: #fff;
   position: absolute;
+  /* 实现页面剧中 */
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.title-box {
+.titleBox {
   height: 60px;
-  background: url('/assets/images/login_title.png') no-repeat center;
+  background: url(../images/login_title.png) no-repeat center;
 }
 
-.reg-box {
+.reg-Box {
   display: none;
 }
 
@@ -44,7 +45,7 @@ body {
   position: relative;
 }
 
-.layui-icon {
+.layui-form-item .layui-icon {
   position: absolute;
   left: 10px;
   top: 10px;
