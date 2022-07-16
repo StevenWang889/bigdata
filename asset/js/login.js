@@ -1,4 +1,5 @@
 $(function () {
+
     // 点击去注册账号
     $('#link_reg').on('click', () => {
         $('.login-Box').hide()
