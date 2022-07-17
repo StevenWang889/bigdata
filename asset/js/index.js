@@ -1,6 +1,4 @@
 $(function () {
-    var token = localStorage.getItem('token')
-    if (token === ' ') alert('滚出去');
 
 
     // 用户基本信息调用
@@ -29,21 +27,13 @@ function getUserInfo() {
         type: 'GET',
         url: '/my/userinfo',
         // 请求头配置对象
-
         success: (res) => {
             // 打印用户信息
             if (res.status !== 0) return layui.layer.msg('获取用户信息失败')
-
             // 调用方法渲染用户头像
             renderAvatar(res.data)
         },
-        // 无论成功或者失败都会调用 complete 回调函数
-
     })
-
-
-
-
 }
 
 
@@ -62,3 +52,5 @@ function renderAvatar(user) {
         $('.text-avatar').html(firstName).show()
     }
 }
+
+
